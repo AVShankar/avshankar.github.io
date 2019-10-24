@@ -258,5 +258,10 @@
 
 .home {
   font-family: sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+.home2 {
+  font-family: sans-serif;
   color: rgb(248, 246, 246);
 }
