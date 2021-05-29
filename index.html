@@ -1,390 +1,582 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="My portfolio" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Portfolio, Digital Portfolio, Developer profile"
+    />
+    <meta name="author" content="Shankar Vasudevan" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
+    <title>Shankar Vasudevan - Portfolio</title>
 
-  <meta charset="utf-8">
-  <meta name="description" content="My portfolio">
-  <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Digital Portfolio, Developer profile">
-  <meta name="author" content="Shankar Vasudevan">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-  <title>Shankar Vasudevan - Portfolio</title>
+    <!-- Custom Fonts -->
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="vendor/simple-line-icons/css/simple-line-icons.css"
+      rel="stylesheet"
+    />
 
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.min.css" rel="stylesheet" />
+    <link href="css/education.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./img/dev.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+      integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
 
-  <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-  <link href="css/education.css" rel="stylesheet">
-
-</head>
-
-<body id="page-top">
-
-  <!-- Navigation -->
-  <a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
-  </a>
-  <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Hola!</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#education">Education</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#skills">Skills</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#projects">Projects</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#blogs">Blogs</a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container text-center my-auto">
-      <h2 class="home">Hello!</h2>
-      <h1 class="home">I'm Shankar Vasudevan</h1>
-      <h3 class="home">
-        <em>Full Stack Developer</em>
-      </h3>
-      <em>&nbsp;&nbsp;-------------------------------</em>
-      <div class="container">
-        <ul class="list-inline mb-5">
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/shankar-vasudevan/" target="_blank">
-              <img src="img/linkedin.svg" alt="" width="20px" height="20px"> 
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/shankarvasu96" target="_blank">
-              <img src="img/twitter.svg" alt="" width="20px" height="20px">
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="social-link rounded-circle text-white" href="https://github.com/AVShankar/" target="_blank">
-              <img src="img/git.svg" alt="" width="24px" height="24px">
-            </a>
-          </li>
-        </ul>
-      </div>
+  <body id="page-top">
+    <!-- Preloader -->
+    <div class="spinner-wrapper">
+      <div class="spinner"></div>
     </div>
-  </header>
-
-  <!-- About -->
-  <section class="content-section bg-light" id="about">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-4 mx-auto">
-          <img src="./img/Dp.jpg" class="rounded" alt="I'm Shankar Vasudevan" width="270px" height="270px">
-        </div>
-        <div class="col-lg-8 mx-auto">
-          <p class="lead mb-5">I'm a B.E graduate from KRCT, currently a full stack developer traininee at ZEN CLASS. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.</p>
-          <i><pre>-Regards,
-            Shankar Vasudevan</pre>
-          </i>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section class="content-section bg-primary text-white text-center" id="education">
-    <div class="container">
-      <div class="content-section-heading">
-        <h2 class="text-secondary mb-0">Education</h2>
-      </div>
-      <br>
-      <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <ul class="timeline">
-        <li>
-          <div class="timeline-image">
-            <img class="img-circle img-responsive" src="./img/graduation.png" alt="">
-          </div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4>B.E</h4>
-              <h4 class="subheading">(2013-2017)</h4>
-            </div>
-            <div class="timeline-body">
-              <p>
-                Completed B.E-Electrical and Electronics Engineering in <span>K. Ramakrishnan College of Technology, with aggerate of 7.1 CGPA.</span>
-              </p>
-            </div>
-          </div>
-          <div class="line"></div>
+    <!-- Navigation -->
+    <a class="menu-toggle rounded" href="#">
+      <i class="fas fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#page-top">Hola!</a>
         </li>
-        <li class="timeline-inverted">
-          <div class="timeline-image">
-            <img class="img-circle img-responsive" src="./img/hsc.jpg" alt="">
-          </div>
-          <div class="timeline-panel">
-            <div class="timeline-heading">
-              <h4>HSC</h4>
-              <h4 class="subheading">(2011-2013)</h4>
-            </div>
-            <div class="timeline-body">
-              <p>
-                Completed HSC in Computer Science group with 66% in The Boys Higher Secondary School Srirangam.
-              </p>
-            </div>
-          </div>
-          <div class="line"></div>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#page-top">Home</a>
         </li>
-        <li>
-            <div class="timeline-image">
-              <img class="img-circle img-responsive" src="./img/schoolbag.png" alt="">
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>SSLC</h4>
-                <h4 class="subheading">(2010-2011)</h4>
-              </div>
-              <div class="timeline-body">
-                <p>
-                    Completed SSLC in Computer Science group with 84% in The Boys Higher Secondary School Srirangam.
-                </p>
-              </div>
-            </div>
-          </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#projects">Projects</a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a class="js-scroll-trigger" href="#blogs">Blogs</a>
+        </li>
       </ul>
-    </div>
-  </div>
-</div>
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Skills -->
-  <div class="callout" id="skills">
-    <div class="container text-center">
-      <h2 class="mx-auto mb-5">Skills</h2>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <img class="img-responsive" src="./img/html.png" alt="" width="600px" height="600px">
-        </div>
-        <div class="col">
-          <img class="img-responsive" src="./img/J_S.png" alt="" width="600px" height="600px">
-        </div>
-        <div class="col">
-          <img class="img-responsive" src="./img/css.png" alt="" width="600px" height="600px">
-        </div>
-        <div class="col">
-          <img class="img-responsive" src="./img/bootstrap.png" alt="" width="600px" height="600px">
-        </div>
-        <div class="col">
-          <img class="img-responsive" src="./img/react.png" alt="" width="600px" height="600px">
-        </div>
-        <div class="col">
-          <img class="img-responsive" src="./img/node.png" alt="" width="600px" height="600px">
-        </div>
-        <div class="col">
-          <img class="img-responsive" src="./img/python.png" alt="" width="600px" height="600px">
-        </div>
-        <div class="col">
-          <img class="img-responsive" src="./img/ccpp.png" alt="" width="600px" height="600px">
-        </div>
-        <div class="col">
-          <img class="img-responsive" src="./img/mongo.png" alt="" width="600px" height="600px">
-        </div>
-        <div class="col">
-          <img class="img-responsive" src="./img/sql.png" alt="" width="600px" height="600px">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h3 style="color: black;"><em>HTML</em></h3>
-        </div>
-        <div class="col">
-          <h3 style="color: black;"><em>JavaScript</em></h3>
-        </div>
-        <div class="col">
-          <h3 style="color: black;"><em>CSS</em></h3>
-        </div>
-        <div class="col">   
-          <h3 style="color: black;"><em>Bootstrap</em></h3>
-        </div>
-        <div class="col">
-          <h3 style="color: black;"><em>React</em></h3>
-        </div>
-        <div class="col">
-          <h3 style="color: black;"><em>Node Js</em></h3>
-        </div>
-        <div class="col">
-          <h3 style="color: black;"><em>Python3</em></h3>
-        </div>
-        <div class="col">
-          <h3 style="color: black;"><em>C/C++</em></h3>
-        </div>
-        <div class="col">
-          <h3 style="color: black;"><em>MongoDB</em></h3>
-        </div>
-        <div class="col">
-          <h3 style="color: black;"><em>SQL</em></h3>
+    <!-- Header -->
+    <header class="masthead d-flex">
+      <div class="container text-center my-auto">
+        <h2 class="home">Hello!</h2>
+        <h1 class="home">I'm Shankar Vasudevan</h1>
+        <h3 class="home">
+          <em>Full Stack Developer</em>
+        </h3>
+        <em>&nbsp;&nbsp;-------------------------------</em>
+        <div class="container">
+          <ul class="list-inline mb-5">
+            <li class="list-inline-item">
+              <a
+                class="social-link rounded-circle text-white mr-3"
+                href="https://www.linkedin.com/in/shankar-vasudevan/"
+                target="_blank"
+              >
+                <img src="img/linkedin.svg" alt="" width="20px" height="20px" />
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                class="social-link rounded-circle text-white mr-3"
+                href="https://twitter.com/shankarvasu96"
+                target="_blank"
+              >
+                <img src="img/twitter.svg" alt="" width="20px" height="20px" />
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                class="social-link rounded-circle text-white"
+                href="https://github.com/AVShankar/"
+                target="_blank"
+              >
+                <img src="img/git.svg" alt="" width="24px" height="24px" />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </div>
+    </header>
 
-  <!-- Portfolio -->
-  <section class="content-section" id="projects">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h2 class="mb-5">Projects</h2>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/AVShankar/CRUD_NodeJs" target="_blank">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>My Phonebook</h2>
-                <p class="mb-0">My phonebook is a web application, done using HTML, CSS, Js and NodeJs with Mongodb for saving and managing contact details.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/phonebook.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/AVShankar/bookmark">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Bookmark App</h2>
-                <p class="mb-0">Bookmark app is a web application done using ReactJS and Firebase for Authentication.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/bookmark.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/AVShankar/auth">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Authenticator</h2>
-                <p class="mb-0">A web application developed to implement OAuth and allows user to sign-in with Google</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/auth.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/AVShankar/Book_Meeting_Room">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Meeting room Manager</h2>
-                <p class="mb-0">A web application developed for reserving and managing common meeting room alloted for set of companines</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/meeting_room.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/AVShankar/My_Todo">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>My Todo</h2>
-                <p class="mb-0">My Todo is a React based web application developed for maintaining one's dailys tasks.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/todo.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="https://github.com/AVShankar/React_routing">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>React Routing</h2>
-                <p class="mb-0">Built one of my favorite actor's Instagram home page using React and React router to switch between tabs without rendering the whole page.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/routing.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call to Action -->
-  <section class="content-section bg-primary text-white">
-    <div class="container text-center" id="blogs">
-      <h2 class="mb-4">Blogs</h2>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="card w-75" style="width: 18rem;">
-            <img src="img/boot.jpg" class="card-img-top" alt="...">
-            <div class="card-body" style="color: black;">
-              <h4 class="card-title">What is Bootstrap?</h4>
-              <p class="card-text">Bootstrap is an open source framework from Twitter that is extensively used for front-end prototyping as well as building various mobile friendly, robust websites that are compatible with a wide range of browsers.</p>
-              <a href="https://medium.com/@shankar.bala96/what-is-bootstrap-and-what-is-the-necessity-of-bootstrap-ebc029a38bec" class="btn btn-primary" target="_blank">Read Blog</a>
-            </div>
+    <!-- About -->
+    <section class="content-section bg-light" id="about">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-lg-4 mx-auto">
+            <img
+              src="./img/Dp.jpg"
+              class="rounded"
+              alt="I'm Shankar Vasudevan"
+              width="270px"
+              height="270px"
+            />
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="lead mb-5">
+              I'm a B.E graduate from KRCT, currently a full stack developer
+              traininee at ZEN CLASS. I believe that to be successful in life,
+              one needs to be obsessive with their dreams and keep working
+              towards them.
+            </p>
+            <i>
+              <pre>
+-Regards,
+            Shankar Vasudevan</pre
+              >
+            </i>
           </div>
         </div>
-        <div class="col-lg-6">
-          <div class="card w-75" style="width: 18rem;">
-            <img src="img/hoisting.jpg" class="card-img-top" alt="...">
-            <div class="card-body" style="color: black;">
-              <h4 class="card-title">Hoisting, Variable shadowing, Scope and Closures: Js</h4>
-              <p class="card-text">It is a programming language used primarily by Web browsers to create a dynamic and interactive experience for the user.</p>
-              <a href="https://medium.com/@shankar.bala96/javascript-hoisting-variable-shadowing-scope-and-closures-27ed946c8769" class="btn btn-primary" target="_blank">Read Blog</a>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section
+      class="content-section bg-primary text-white text-center"
+      id="education"
+    >
+      <div class="container">
+        <div class="content-section-heading">
+          <h2 class="text-secondary mb-0">Education</h2>
+        </div>
+        <br />
+        <link
+          href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+          rel="stylesheet"
+          id="bootstrap-css"
+        />
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <!------ Include the above in your HEAD tag ---------->
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="timeline">
+                <li>
+                  <div class="timeline-image">
+                    <img
+                      class="img-circle img-responsive"
+                      src="./img/graduation.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4>B.E</h4>
+                      <h4 class="subheading">(2013-2017)</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p>
+                        Completed B.E-Electrical and Electronics Engineering in
+                        <span
+                          >K. Ramakrishnan College of Technology, with aggerate
+                          of 7.1 CGPA.</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                </li>
+                <li class="timeline-inverted">
+                  <div class="timeline-image">
+                    <img
+                      class="img-circle img-responsive"
+                      src="./img/hsc.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4>HSC</h4>
+                      <h4 class="subheading">(2011-2013)</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p>
+                        Completed HSC in Computer Science group with 66% in The
+                        Boys Higher Secondary School Srirangam.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="line"></div>
+                </li>
+                <li>
+                  <div class="timeline-image">
+                    <img
+                      class="img-circle img-responsive"
+                      src="./img/schoolbag.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h4>SSLC</h4>
+                      <h4 class="subheading">(2010-2011)</h4>
+                    </div>
+                    <div class="timeline-body">
+                      <p>
+                        Completed SSLC in Computer Science group with 84% in The
+                        Boys Higher Secondary School Srirangam.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- Skills -->
+    <div class="callout" id="skills">
+      <div class="container text-center">
+        <h2 class="mx-auto mb-5">Skills</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <img
+              class="img-responsive"
+              src="./img/html.png"
+              alt=""
+              width="600px"
+              height="600px"
+            />
+          </div>
+          <div class="col">
+            <img
+              class="img-responsive"
+              src="./img/J_S.png"
+              alt=""
+              width="600px"
+              height="600px"
+            />
+          </div>
+          <div class="col">
+            <img
+              class="img-responsive"
+              src="./img/css.png"
+              alt=""
+              width="600px"
+              height="600px"
+            />
+          </div>
+          <div class="col">
+            <img
+              class="img-responsive"
+              src="./img/bootstrap.png"
+              alt=""
+              width="600px"
+              height="600px"
+            />
+          </div>
+          <div class="col">
+            <img
+              class="img-responsive"
+              src="./img/react.png"
+              alt=""
+              width="600px"
+              height="600px"
+            />
+          </div>
+          <div class="col">
+            <img
+              class="img-responsive"
+              src="./img/node.png"
+              alt=""
+              width="600px"
+              height="600px"
+            />
+          </div>
+          <div class="col">
+            <img
+              class="img-responsive"
+              src="./img/python.png"
+              alt=""
+              width="600px"
+              height="600px"
+            />
+          </div>
+          <div class="col">
+            <img
+              class="img-responsive"
+              src="./img/ccpp.png"
+              alt=""
+              width="600px"
+              height="600px"
+            />
+          </div>
+          <div class="col">
+            <img
+              class="img-responsive"
+              src="./img/mongo.png"
+              alt=""
+              width="600px"
+              height="600px"
+            />
+          </div>
+          <div class="col">
+            <img
+              class="img-responsive"
+              src="./img/sql.png"
+              alt=""
+              width="600px"
+              height="600px"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h3 style="color: black"><em>HTML</em></h3>
+          </div>
+          <div class="col">
+            <h3 style="color: black"><em>JavaScript</em></h3>
+          </div>
+          <div class="col">
+            <h3 style="color: black"><em>CSS</em></h3>
+          </div>
+          <div class="col">
+            <h3 style="color: black"><em>Bootstrap</em></h3>
+          </div>
+          <div class="col">
+            <h3 style="color: black"><em>React</em></h3>
+          </div>
+          <div class="col">
+            <h3 style="color: black"><em>Node Js</em></h3>
+          </div>
+          <div class="col">
+            <h3 style="color: black"><em>Python3</em></h3>
+          </div>
+          <div class="col">
+            <h3 style="color: black"><em>C/C++</em></h3>
+          </div>
+          <div class="col">
+            <h3 style="color: black"><em>MongoDB</em></h3>
+          </div>
+          <div class="col">
+            <h3 style="color: black"><em>SQL</em></h3>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <br>
-    <div class="container mb-5">
-      Download my resume here: <a href="https://drive.google.com/file/d/1aGg6GJ4SuujZDN6lVHygXSOo5CZHHlgG/view?usp=sharing" target="_blank"><button class="btn btn-success">Download</button></a>
-      <!-- <input type="button" value="Download" class="btn btn-success" target="_blank" onclick="google.com"> -->
-    <h4 class="footer text-center"><em>Hasta la vista!</em></h4>
-    </div>
-  </footer>
+    <!-- Portfolio -->
+    <section class="content-section" id="projects">
+      <div class="container">
+        <div class="content-section-heading text-center">
+          <h2 class="mb-5">Projects</h2>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a
+              class="portfolio-item"
+              href="https://github.com/AVShankar/CRUD_NodeJs"
+              target="_blank"
+            >
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>My Phonebook</h2>
+                  <p class="mb-0">
+                    My phonebook is a web application, done using HTML, CSS, Js
+                    and NodeJs with Mongodb for saving and managing contact
+                    details.
+                  </p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/phonebook.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a
+              class="portfolio-item"
+              href="https://github.com/AVShankar/bookmark"
+            >
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Bookmark App</h2>
+                  <p class="mb-0">
+                    Bookmark app is a web application done using ReactJS and
+                    Firebase for Authentication.
+                  </p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/bookmark.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="https://github.com/AVShankar/auth">
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Authenticator</h2>
+                  <p class="mb-0">
+                    A web application developed to implement OAuth and allows
+                    user to sign-in with Google
+                  </p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/auth.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a
+              class="portfolio-item"
+              href="https://github.com/AVShankar/Book_Meeting_Room"
+            >
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>Meeting room Manager</h2>
+                  <p class="mb-0">
+                    A web application developed for reserving and managing
+                    common meeting room alloted for set of companines
+                  </p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/meeting_room.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a
+              class="portfolio-item"
+              href="https://github.com/AVShankar/My_Todo"
+            >
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>My Todo</h2>
+                  <p class="mb-0">
+                    My Todo is a React based web application developed for
+                    maintaining one's dailys tasks.
+                  </p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/todo.jpg" alt="" />
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a
+              class="portfolio-item"
+              href="https://github.com/AVShankar/React_routing"
+            >
+              <span class="caption">
+                <span class="caption-content">
+                  <h2>React Routing</h2>
+                  <p class="mb-0">
+                    Built one of my favorite actor's Instagram home page using
+                    React and React router to switch between tabs without
+                    rendering the whole page.
+                  </p>
+                </span>
+              </span>
+              <img class="img-fluid" src="img/routing.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
+    <!-- Call to Action -->
+    <section class="content-section bg-primary text-white">
+      <div class="container text-center" id="blogs">
+        <h2 class="mb-4">Blogs</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card w-75" style="width: 18rem">
+              <img src="img/boot.jpg" class="card-img-top" alt="..." />
+              <div class="card-body" style="color: black">
+                <h4 class="card-title">What is Bootstrap?</h4>
+                <p class="card-text">
+                  Bootstrap is an open source framework from Twitter that is
+                  extensively used for front-end prototyping as well as building
+                  various mobile friendly, robust websites that are compatible
+                  with a wide range of browsers.
+                </p>
+                <a
+                  href="https://medium.com/@shankar.bala96/what-is-bootstrap-and-what-is-the-necessity-of-bootstrap-ebc029a38bec"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Read Blog</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card w-75" style="width: 18rem">
+              <img src="img/hoisting.jpg" class="card-img-top" alt="..." />
+              <div class="card-body" style="color: black">
+                <h4 class="card-title">
+                  Hoisting, Variable shadowing, Scope and Closures: Js
+                </h4>
+                <p class="card-text">
+                  It is a programming language used primarily by Web browsers to
+                  create a dynamic and interactive experience for the user.
+                </p>
+                <a
+                  href="https://medium.com/@shankar.bala96/javascript-hoisting-variable-shadowing-scope-and-closures-27ed946c8769"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Read Blog</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Footer -->
+    <footer>
+      <br />
+      <div class="container mb-5">
+        Download my resume here:
+        <a
+          href="https://drive.google.com/file/d/1aGg6GJ4SuujZDN6lVHygXSOo5CZHHlgG/view?usp=sharing"
+          target="_blank"
+          ><button class="btn btn-success">Download</button></a
+        >
+        <!-- <input type="button" value="Download" class="btn btn-success" target="_blank" onclick="google.com"> -->
+        <h4 class="footer text-center"><em>Hasta la vista!</em></h4>
+      </div>
+    </footer>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
 
-  <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-</body>
-
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>
